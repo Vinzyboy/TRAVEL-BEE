@@ -1,0 +1,346 @@
+@use "../abstract" as *;
+@use "../base/" as *;
+
+.aboutBanner {
+  background-image: url(../../IMG/aaec3d71-group-62.png);
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    @include centerAll;
+    .top {
+      position: relative;
+      gap: 5rem;
+      padding: 10rem;
+      h1 {
+        font-size: 5rem;
+      }
+      p {
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+      }
+
+      img {
+        position: absolute;
+        top: 17rem;
+        right: -17rem;
+      }
+    }
+  }
+
+  .bottom {
+    position: relative;
+    img {
+      position: absolute;
+      bottom: 7rem;
+      right: 46rem;
+    }
+    a {
+      position: absolute;
+      border-radius: 50%;
+      background-color: $clr--light;
+      border-color: $clr--light;
+      padding: 1rem;
+      bottom: -2rem;
+      i {
+        font-size: 2rem;
+        color: $clr--dark;
+      }
+    }
+  }
+}
+
+.aboutAdventures {
+  &__title {
+    padding: 5rem 0;
+    h2 {
+      font-size: 3rem;
+      color: $clr--dark;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    gap: 20rem;
+  }
+  &__img {
+    padding-bottom: 7rem;
+    img {
+      border-top-left-radius: 40rem;
+      border-top-right-radius: 40rem;
+      width: 23rem;
+      position: relative;
+    }
+    img:last-child {
+      border-radius: 50%;
+      border: 1rem solid;
+      position: absolute;
+      margin-top: 17rem;
+      left: 26rem;
+    }
+  }
+
+  &__text {
+    width: 36rem;
+    padding-top: 4rem;
+    h4 {
+      color: $clr--dark;
+      padding-left: 1rem;
+      font-size: 1.5rem;
+    }
+    p {
+      color: $clr--dark;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    a {
+      margin-left: 1rem;
+    }
+  }
+}
+
+.aboutPost {
+  padding: 5rem 0;
+  &__title {
+    padding: 5rem 0;
+    h2 {
+      font-size: 3rem;
+      text-align: center;
+      color: $clr--dark;
+    }
+    p {
+      text-align: center;
+      color: $clr--dark;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    gap: 10rem;
+
+    .content {
+      display: flex;
+      gap: 1rem;
+      img {
+        width: 15rem;
+        height: 10rem;
+        object-fit: cover;
+      }
+      &__text {
+        h5 {
+          color: $clr--primary;
+          padding-bottom: 1rem;
+        }
+        h4 {
+          color: $clr--dark;
+          font-weight: 600;
+        }
+        small {
+          color: $clr--dark;
+          font-size: small;
+        }
+        p {
+          color: $clr--dark;
+          width: 20rem;
+          padding-bottom: 1rem;
+          padding-top: 1rem;
+        }
+        a {
+          color: $clr--dark;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  &__card {
+    padding-bottom: 2rem;
+  }
+}
+
+.aboutDestinations {
+  &__title {
+    padding: 5rem 0;
+    text-align: center;
+    padding-top: 9rem;
+    h2 {
+      color: $clr--dark;
+      font-size: 3rem;
+    }
+    small {
+      color: $clr--dark;
+    }
+  }
+  &__wrapper {
+    ul {
+      display: flex;
+      gap: 2rem;
+      img {
+        width: 21rem;
+      }
+    }
+    .button {
+      @include centerAll;
+      padding: 2rem;
+    }
+  }
+}
+
+.aboutBlog {
+  padding: 5rem;
+  &__wrapper {
+    display: flex;
+    gap: 4rem;
+  }
+  &__cards {
+    padding-bottom: 3rem;
+    position: relative;
+    img {
+      width: 48rem;
+      height: 34rem;
+      object-fit: cover;
+    }
+    h4 {
+      font-size: 2rem;
+      color: $clr--dark;
+      padding-bottom: 0.5rem;
+    }
+    p {
+      color: $clr--dark;
+      width: 45rem;
+      border-bottom: 1px solid rgb(187, 182, 182);
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+    }
+    small {
+      color: $clr--dark;
+      font-weight: 600;
+    }
+    .play {
+      position: absolute;
+      top: 1rem;
+      left: 41rem;
+      .tag {
+        background-color: $clr--primary;
+        width: 5.5rem;
+        padding: 0.5rem;
+        border-radius: 2rem;
+      }
+      i {
+        color: $clr--dark;
+        background-color: $clr--light;
+        padding: 1rem;
+        width: 4rem;
+        text-align: center;
+        margin-left: 0.9rem;
+      }
+    }
+  }
+  &__right {
+    position: relative;
+    &--cards {
+      img {
+        width: 38rem;
+      }
+      h4 {
+        color: $clr--dark;
+        font-size: 2rem;
+        padding-bottom: 1rem;
+      }
+      p {
+        width: 38rem;
+        border: none;
+        color: $clr--dark;
+        padding-bottom: 2rem;
+      }
+      .plays {
+        position: absolute;
+        top: 1rem;
+        left: 31rem;
+        .tag {
+          background-color: $clr--primary;
+          width: 5.5rem;
+          padding: 0.5rem;
+          border-radius: 2rem;
+        }
+        i {
+          color: $clr--dark;
+          background-color: $clr--light;
+          padding: 1rem;
+          width: 4rem;
+          text-align: center;
+          margin-left: 0.9rem;
+        }
+      }
+    }
+    .search {
+      input {
+        // border: 1px solid $clr--dark;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 30rem;
+        height: 3rem;
+        margin-bottom: 4rem;
+        &::placeholder {
+          padding-left: 2rem;
+        }
+      }
+      a {
+        background-color: $clr--dark;
+        padding: 0.6rem 1.5rem;
+        color: $clr--light;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  &__small {
+    .content {
+      display: flex;
+      gap: 2rem;
+      padding-bottom: 2rem;
+      img {
+        width: 10rem;
+        height: 10rem;
+      }
+      ul {
+        padding-top: 1.5rem;
+        color: $clr--dark;
+        li:first-child {
+          color: $clr--primary;
+          padding-bottom: 0.5rem;
+          font-weight: 600;
+        }
+        li:nth-child(2) {
+          width: 15rem;
+          font-weight: 700;
+          padding-bottom: 0.5rem;
+        }
+        small {
+          font-weight: unset;
+        }
+      }
+    }
+  }
+}
+
+.slider {
+  padding-bottom: 8rem;
+  .title {
+    @include centerAll;
+    h4 {
+      color: $clr--dark;
+      i {
+        font-size: 2rem;
+        color: $clr--primary;
+        padding-right: 0.5rem;
+      }
+    }
+    h2 {
+      color: $clr--dark;
+      font-size: 3rem;
+    }
+  }
+  &__images {
+    img {
+      height: 20rem;
+      width: 22rem;
+    }
+  }
+}

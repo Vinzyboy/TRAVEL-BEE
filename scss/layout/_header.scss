@@ -1,0 +1,23 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.header {
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    a {
+      color: $clr--light;
+      &:hover,
+      &.active {
+        color: $clr--primary;
+      }
+    }
+    img {
+      width: 15rem;
+      @include centerAll;
+      margin: 0.5rem auto;
+      margin-left: 16rem;
+    }
+  }
+}

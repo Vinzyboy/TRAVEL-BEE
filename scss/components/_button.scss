@@ -1,0 +1,32 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.btn {
+  background-color: transparent;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  font-family: $font-primary;
+  padding: 1rem 2rem;
+
+  &.bg--primary {
+    @extend .btn;
+    background-color: $clr--primary;
+    color: $clr--light;
+    font-weight: 600;
+    &:hover {
+      background-color: $clr--light;
+      color: $clr--dark;
+      border: 1px solid $clr--dark;
+    }
+  }
+  &.bg--dark{
+    @extend .btn;
+    background-color: $clr--dark;
+    color: $clr--light;
+    font-weight: 600;
+    &:hover{
+        background-color: $clr--primary;
+        color: $clr--light;
+    }
+  }
+}

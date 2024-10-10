@@ -1,0 +1,54 @@
+@use "../abstract" as *;
+@use "../base/" as *;
+
+.footer {
+  &__wrapper {
+  }
+  &__nav {
+    display: flex;
+    padding-bottom: 3rem;
+    gap: 3rem;
+    a {
+      color: $clr--dark;
+      font-weight: 600;
+      &:hover,
+      &.active {
+        color: $clr--primary;
+      }
+    }
+    img {
+      width: 15rem;
+      margin: 0.5rem auto;
+      color: $clr--dark;
+    }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    .text {
+      display: flex;
+      gap: 0.5rem;
+      font-weight: 600;
+      p {
+        color: $clr--dark;
+      }
+      p:last-child {
+        color: $clr--primary;
+        &:hover {
+          color: $clr--dark;
+        }
+      }
+    }
+    .icons {
+      display: flex;
+      gap: 3rem;
+      padding-bottom: 3rem;
+      i {
+        color: $clr--dark;
+        &:hover {
+          color: $clr--primary;
+        }
+      }
+    }
+  }
+}
